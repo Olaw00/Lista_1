@@ -1,0 +1,252 @@
+/* Resetowanie domyślnych marginesów, paddingów i granic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ogólne style strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header - pasek menu */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /*rozstawienie*/
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Główna sekcja */
+main {
+    padding: 2rem;
+}
+
+/* Formatowanie sekcji */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Wideo */
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Formularz kontaktowy */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+/* Rysunek domu */
+#drawing {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.house {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #ffcc00;
+    border: 5px solid #333;
+    border-radius: 8px 8px 0 0;
+}
+
+.roof {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #b52f2f;
+}
+
+.walls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 80px;
+    background-color: #4c94ff;
+    border: 3px solid #333;
+    border-radius: 4px;
+}
+
+.door {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    background-color: #3e2723;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+.window {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+/* Responsywność - Tablety */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
+
+/* Responsywność - Telefony */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    form {
+        padding: 0.5rem;
+    }
+}
+
+/* Animacja CSS3 zwiększenie przezroczystości */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Zagnieżdżone listy */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: disc;
+}
+
+/* Flexbox do układów */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Tło sekcji */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+/* Tło całej strony */
+body {
+    background-color: #eaeaea;
+}
+
+/* Przycisk */
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
