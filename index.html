@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head> <!--responsywność-->
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plik2.css">
+    <title>Strona internetowa</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul> <!--lista-->
+                <li><a href="#section1">Link 1</a></li>
+                <li><a href="#section2">Link 2</a></li>
+                <li><a href="#section3">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h1>Pierwsza responsywna strona internetowa</h1>
+            <!--<p style="font-size: xx-large;"><b>Pierwsza responsywna strona internetowa</b></p> -->
+        </section>
+                
+
+        <section id="section2">
+            <h2>Akapit 1</h2>
+            <p>Tu jest jakiś przykład umieszczony w akapicie pierwszym.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Akapit 2</h2>
+            <p>Tu jest jakiś przykład umieszczony w akapicie drugim. Jeśl chcesz dowiedzieć się, więcej 
+                przejdź do naszej podstrony: 
+                <button> Wchodze </button> <!--przycisk1-->
+            </p>
+        </section>
+
+    
+
+        <section id="video-section"> <!--video-->
+            <h2>Wideo przykładowe</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="form-section"> <!--formularz-->
+            <h2>Formularz kontaktowy</h2>
+            <form action="#" method="POST">
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Wyślij</button> 
+                <button type="reset">Zresetuj</button><!--przycisk2-->
+            </form>
+        </section>
+                        <section id="drawing"> <!-- Rysunek  -->
+                    <div class="house">
+                        <div class="roof"></div>
+                        <div class="walls"></div>
+                        <div class="door"></div>
+                        <div class="window"></div>
+                    </div>
+                </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Projekt i wykonanie - AW </p>
+        </div>
+    </footer>
+</body>
+
+    </main>
+
+</body>
+
+</html>
